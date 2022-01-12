@@ -37,7 +37,7 @@ REST API – cardholder licensable feature – updates authorized cardholder Per
 The .env file in the gallagher-restapi-mobilecredential directory contains all the "setup" configurations that should not be on the public internet.
 it is ignored using the .gitignore file (so it isn't checked in with the code).
 An example of what that file contains is shown in the image. 
-![.env file list of attributes](https://github.com/bitrat/gallagher-restapi-mobilecredential/simple-auth/src/assets/envFile.png)
+![.env file list of attributes](https://github.com/bitrat/gallagher-restapi-mobilecredential/blob/main/simple-auth/src/assets/envFile.png)
 
 ## Install and setup Vue.js
 Create simple-auth Project – axios to send front-end requests to Flask app
