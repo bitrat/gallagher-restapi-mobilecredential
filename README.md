@@ -33,12 +33,6 @@ REST API – cardholder licensable feature – updates authorized cardholder Per
   - create at least 2 users in RequestAccess access group
   - create at least 2 users in NoAccess access group
 
-## Install and setup .env file
-The .env file in the gallagher-restapi-mobilecredential directory contains all the "setup" configurations that should not be on the public internet.
-it is ignored using the .gitignore file (so it isn't checked in with the code).
-An example of what that file contains is shown in the image. 
-![.env file list of attributes](https://github.com/bitrat/gallagher-restapi-mobilecredential/blob/main/simple-auth/src/assets/envFile.png)
-
 ## Install and setup Vue.js
 Create simple-auth Project – axios to send front-end requests to Flask app
   
@@ -54,7 +48,7 @@ The vue app currently will run on localhost:8090
   
 * Navigate into gallagher-restapi-mobilecredential\env Project folder - install requirements
 
-* You will need to create and then populate your .env file (this is a text file with your secrets or other information you want to reference as a variable rather than repeat code - i.e. Gallagher API parent address, Gallagher API key, Email password etc) - the python-dotenv library is used to reference this file during app functioning.
+* You will need to create and then populate your .env file (this is a text file with your secrets or other information you want to reference as a variable rather than repeat code - i.e. Gallagher API parent address, Gallagher API key, Email password etc) - the python-dotenv library is used to reference this file during app functioning. The .env file is ignored using your .gitignore file (so it isn't checked in with this code).
   - GALLAGHER_API="https://127.0.0.1:8904/api"
   - CERT_FILENAME="XXX.pfx"
   - CERT_PSW="XXX"
@@ -62,6 +56,8 @@ The vue app currently will run on localhost:8090
   - MAIL_DEFAULT_SENDER="xxx@xxx.com"
   - MAIL_USERNAME="xxx@xxx.com"
   - MAIL_PASSWORD="XXX"
+
+![.env file list of attributes](https://github.com/bitrat/gallagher-restapi-mobilecredential/blob/main/simple-auth/src/assets/envFile.png)
   
 * .\\Scripts\activate
 
