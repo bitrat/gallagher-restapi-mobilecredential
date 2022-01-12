@@ -33,10 +33,15 @@ REST API – cardholder licensable feature – updates authorized cardholder Per
   - create at least 2 users in RequestAccess access group
   - create at least 2 users in NoAccess access group
 
+## Install and setup .env file
+The .env file in the gallagher-restapi-mobilecredential directory contains all the "setup" configurations that should not be on the public internet.
+it is ignored using the .gitignore file (so it isn't checked in with the code).
+An example of what that file contains is shown in the image.
+
 ## Install and setup Vue.js
 Create simple-auth Project – axios to send front-end requests to Flask app
   
-* Navigate into PyGallRest\simple-auth Project folder
+* Navigate into gallagher-restapi-mobilecredential\simple-auth Project folder
 
 * npm install
 
@@ -46,7 +51,7 @@ The vue app currently will run on localhost:8090
 
 ## Install and setup Flask
   
-* Navigate into PyGallRest\env Project folder - install requirements
+* Navigate into gallagher-restapi-mobilecredential\env Project folder - install requirements
 
 * You will need to create and then populate your .env file (this is a text file with your secrets or other information you want to reference as a variable rather than repeat code - i.e. Gallagher API parent address, Gallagher API key, Email password etc) - the python-dotenv library is used to reference this file during app functioning.
   - GALLAGHER_API="https://127.0.0.1:8904/api"
